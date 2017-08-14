@@ -40,7 +40,7 @@ class App extends Component {
         </div>
         <Form submitHandler={this.submitHandler} changeHandler={this.changeHandler} />
         <div>
-          { this.state.city ? <span>{this.state.city} 5 Day Weather</span> : '' } 
+          { this.state.city ? <span>{this.state.city} 5 Day Weather</span> : '' }
         </div>
         <List list={this.state.list} />
       </div>

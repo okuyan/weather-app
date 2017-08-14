@@ -5,6 +5,7 @@
   "dependencies": {
     "moment-timezone": "^0.5.13",
     "node-sass-chokidar": "^0.0.3",
+    "normalize.css": "^7.0.0",
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

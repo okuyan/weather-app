@@ -1,3 +1,21 @@
 .Item {
   list-style: none;
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+
+  img {
+    display: inline;
+    width: 20%;
+  }
+
+  .Item--section {
+    text-align: left;
+    width: 80%;
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  .Item--section-datetime {
+    display: block;
+  }
 }

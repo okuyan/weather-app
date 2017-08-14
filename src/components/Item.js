@@ -9,18 +9,20 @@ const Item = (props) => {
     weather,
     main,
   } = props.info;
-  const dateTime = moment(dt_txt).tz("America/Los_Angeles").format();
+  const dateTime = moment(dt_txt).tz("America/Los_Angeles").format("YYYY-MM-DD HH:mm");
   const iconSrc = `http://openweathermap.org/img/w/${weather[0].icon}.png`;
   const description = weather[0].description;
-  const tempMax = main.temp_max;
-  const tempMin = main.temp_min;
+  const tempMax = Math.floor(main.temp_max);
+  const tempMin = Math.floor(main.temp_min);
 
   return (
     <li className="Item">
       <img src={iconSrc} />
-      <span>{dateTime}</span>
-      <span>{description}</span>
-      <span>{tempMax}/{tempMin}</span>
+      <div className="Item--section">
+        <span className="Item--section-datetime">{dateTime}</span>
+        <span>{description}</span>
+        <span>{tempMax}/{tempMin}</span>
+      </div>
     </li>
   );
 };
